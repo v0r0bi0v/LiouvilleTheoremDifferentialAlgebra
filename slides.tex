@@ -46,10 +46,6 @@
 \renewcommand{\le}{\leqslant}
 \renewcommand{\ge}{\geqslant}
 
-\usepackage{etoolbox} % пакет для изменения настроек
-\makeatletter
-\patchcmd{\@addtheorem}{\addcontentsline}{\@gobbletwo}{}{}
-\makeatother
 
 \begin{document}
     \title[Liouville's Theorem]{Liouville's Theorem (Differential algebra)}
@@ -69,6 +65,9 @@
                 \item $(a+b)' = a' + b'$
                 \item $(ab)' = a'b + ab'$
             \end{itemize}
+        \end{definition}
+        \begin{definition}
+        Subfield $K\subseteq F$, $K = \{ a \in F | a' = 0 \}$ is called subfield of constants.
         \end{definition}
     \end{frame}
 
