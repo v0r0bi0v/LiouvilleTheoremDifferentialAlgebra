@@ -46,9 +46,14 @@
 \renewcommand{\le}{\leqslant}
 \renewcommand{\ge}{\geqslant}
 
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@addtheorem}{\addcontentsline}{\relax}{}{}
+\makeatother
+
 
 \begin{document}
-    \title[Liouville's Theorem (Differential algebra)]{Liouville's Theorem}
+    \title[Liouville's Theorem]{Liouville's Theorem (Differential algebra)}
     \author{Vanya Vorobiov}
     \date{\today}
     \institute{Sber}
@@ -60,7 +65,7 @@
     \section{What is integrability in elementary functions}
     \begin{frame}{What is integrability in elementary functions}
         \begin{definition}
-            Field K is differential it's equipped the unary function $'$ such that:
+            Field K is differential if it's equipped the unary function $'$ such that:
             \begin{itemize}
                 \item $(a+b)' = a' + b'$
                 \item $(ab)' = a'b + ab'$
