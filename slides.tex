@@ -106,7 +106,7 @@
 \begin{section}{Liouville's Theorem (statement)}
 \begin{frame}{Liouville's Theorem (statement)}
     \begin{theorem}[Liouville, 1833-1841]
-        Let $F$ be the differential field, and $K$ is its subfield of constants. 
+        Let $F$ be a differential field, and $K$ is its subfield of constants. 
         If for $\alpha\in F$ equation $x' = \alpha$ has the solution in some elementary extension of $F$, then
         \[
             \alpha = \sum\limits_{i=1}^m c_i \frac{u_i'}{u_i} + v'
@@ -118,7 +118,13 @@
 \section{The Main Lemma}
 \begin{frame}{The Main Lemma}
     \begin{lemma}
-        TODO
+        Let $F$ be a differential field. 
+        And $t$ is trancendental over $F$, and $t$ is a logarithm or an exponent of some element from $F$. 
+        And let $f\in F[x]$ be a polynom, $\deg{f} = k \ge 1$
+        \begin{itemize}
+            \item If $t$ is a logarithm then $(f(t))'$ has degree $k$ if the leading coefficient of is not a constant, and it has degree $k-1$ if  the leading coefficient is a constant.
+            \item If $t$ is an exponent then $(f(t))'$ has degree $k$ and it's multiple of $f$ if and only if $f$ is a monomial.
+        \end{itemize}
     \end{lemma}
 \end{frame}
 
