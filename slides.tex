@@ -92,44 +92,51 @@
     
     
 
-\section{What is integrability in elementary functions}
-\begin{frame}{What is integrability in elementary functions}
-    \begin{definition}<1->
-        The extension $E$ of $F$ is called elementary if it can be presented as $E = F(t_1, \ldots, t_n)$ and for all $i$ $t_i$ is logarithm or exponent or algebraic over $F(t_1, \ldots, t_{i-1})$.
-    \end{definition}
-    \begin{block}{Remark}<2->
-        Common sense says us that some function $f: \C \to \C$ is elementary iff it can be constucted via finite number of radicals, sines, cosines, exponents, logarithms and hyperbolic functions.
-        One can see that it's consistent with our approach.
-    \end{block}
-\end{frame}
+    \section{What is integrability in elementary functions}
+    \begin{frame}{What is integrability in elementary functions}
+        \begin{definition}<1->
+            The extension $E$ of $F$ is called elementary if it can be presented as $E = F(t_1, \ldots, t_n)$ and for all $i$ $t_i$ is logarithm or exponent or algebraic over $F(t_1, \ldots, t_{i-1})$.
+        \end{definition}
+        \begin{block}{Remark}<2->
+            Common sense says us that some function $f: \C \to \C$ is elementary iff it can be constucted via finite number of radicals, sines, cosines, exponents, logarithms and hyperbolic functions.
+            One can see that it's consistent with our approach.
+        \end{block}
+    \end{frame}
 
-\begin{section}{Liouville's Theorem (statement)}
-\begin{frame}{Liouville's Theorem (statement)}
-    \begin{theorem}[Liouville, 1833-1841]
-        Let $F$ be a differential field, and $K$ is its subfield of constants. 
-        If for $\alpha\in F$ equation $x' = \alpha$ has the solution in some elementary extension of $F$, then
-        \[
-            \alpha = \sum\limits_{i=1}^m c_i \frac{u_i'}{u_i} + v'
-        \]
-        for some $c_1, \ldots c_m \in K$, $u_1, \ldots, u_m, v \in F$.
-    \end{theorem}
-\end{frame}
+    \begin{section}{Liouville's Theorem (statement)}
+    \begin{frame}{Liouville's Theorem (statement)}
+        \begin{theorem}[Liouville, 1833-1841]
+            Let $F$ be a differential field, and $K$ is its subfield of constants. 
+            If for $\alpha\in F$ equation $x' = \alpha$ has the solution in some elementary extension of $F$, then
+            \[
+                \alpha = \sum\limits_{i=1}^m c_i \frac{u_i'}{u_i} + v'
+            \]
+            for some $c_1, \ldots c_m \in K$, $u_1, \ldots, u_m, v \in F$.
+        \end{theorem}
+    \end{frame}
 
-\section{The Main Lemma}
-\begin{frame}{The Main Lemma}
-    \begin{lemma}<1->
-        Let $F$ be a differential field, $t$ is trancendental over $F$, and $t$ is a logarithm or an exponent of some element from $F$. 
-        And let $f\in F[x]$ be a polynom, $\deg{f} = k \ge 1$
-        \begin{itemize}
-            \item If $t$ is a logarithm then the degree of $(f(t))'$ is $k$ if the leading coefficient of is not a constant, and it has degree $k-1$ if  the leading coefficient is a constant.
-            \item If $t$ is an exponent then the degree of $(f(t))'$ is $k$ and it's multiple of $f$ if and only if $f$ is a monomial.
-        \end{itemize}
-    \end{lemma}
+    \section{The Main Lemma}
+    \begin{frame}{The Main Lemma}
+        \begin{lemma}<1->
+            Let $F$ be a differential field, $t$ is trancendental over $F$, and $t$ is a logarithm or an exponent of some element from $F$. 
+            And let $f\in F[x]$ be a polynom, $\deg{f} = k \ge 1$
+            \begin{itemize}
+                \item If $t$ is a logarithm then the degree of $(f(t))'$ is $k$ if the leading coefficient of is not a constant, and it has degree $k-1$ if  the leading coefficient is a constant.
+                \item If $t$ is an exponent then the degree of $(f(t))'$ is $k$ and it's multiple of $f$ if and only if $f$ is a monomial.
+            \end{itemize}
+        \end{lemma}
 
-    \begin{proof}<2->
-        It's a simple technical exercise.
-    \end{proof}
-\end{frame}
+        \begin{proof}<2->
+            It's a quite simple technical exercise.
+        \end{proof}
+    \end{frame}
+
+    \section{Liouville's Theorem (proof)}
+    \begin{frame}{Liouville's Theorem (proof)}
+        Let $x$ be the solution of differential equation mentioned above. And $x\in F(t_1, \ldots, t_n)$
+        We will use induction on $n$ (we don't fix the field $F$).
+
+    \end{frame}
 
 
 \end{document}
