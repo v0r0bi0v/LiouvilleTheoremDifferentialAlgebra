@@ -133,9 +133,16 @@
 
     \section{Liouville's Theorem (proof)}
     \begin{frame}{Liouville's Theorem (proof)}
-        Let $x$ be the solution of differential equation mentioned above. And $x\in F(t_1, \ldots, t_n)$
-        We will use induction on $n$ (we don't fix the field $F$).
+        Let $x$ be the solution of differential equation mentioned above. And $x\in F(t_1, \ldots, t_n)$.
 
+        We will use induction on $n$ (we don't fix the field $F$).
+        And for short we will denote $t = t_1$.
+
+        Using the inductive assumption, we get
+        \[
+                \alpha = \sum\limits_{i=1}^m c_i \frac{u_i'}{u_i} + v'
+        \]
+        for some $c_1, \ldots c_m \in K_1$, $u_1, \ldots, u_m, v \in F(t_1)$.
     \end{frame}
 
 
