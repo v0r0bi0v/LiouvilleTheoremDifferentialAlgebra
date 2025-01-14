@@ -46,11 +46,10 @@
 \renewcommand{\le}{\leqslant}
 \renewcommand{\ge}{\geqslant}
 
-\usepackage{etoolbox}
+\usepackage{etoolbox} % пакет для изменения настроек
 \makeatletter
-\patchcmd{\@addtheorem}{\addcontentsline}{\relax}{}{}
+\patchcmd{\@addtheorem}{\addcontentsline}{\@gobbletwo}{}{}
 \makeatother
-
 
 \begin{document}
     \title[Liouville's Theorem]{Liouville's Theorem (Differential algebra)}
