@@ -107,7 +107,7 @@
     \begin{frame}{Liouville's Theorem (statement)}
         \begin{theorem}[Liouville, 1833-1841]
             Let $F$ be a differential field, and $K$ is its subfield of constants. 
-            If for $\alpha\in F$ equation $x' = \alpha$ has the solution in some elementary extension of $F$, then
+            If for $\alpha\in F$ equation $x' = \alpha$ has the solution in some elementary extension of $F$, such that its subfield of constants is still $K$, then
             \[
                 \alpha = \sum\limits_{i=1}^m c_i \frac{u_i'}{u_i} + v'
             \]
@@ -142,7 +142,9 @@
         \[
                 \alpha = \sum\limits_{i=1}^m c_i \frac{u_i'}{u_i} + v'
         \]
-        for some $c_1, \ldots c_m \in K_1$, $u_1, \ldots, u_m, v \in F(t_1)$.
+        for some $c_1, \ldots c_m \in K$, $u_1, \ldots, u_m, v \in F(t_1)$.
+        
+        Here we use that the subfield of constants of $F(t_1)$ is $K$.
     \end{frame}
 
 
