@@ -199,15 +199,29 @@
         }
 
         
-            \begin{itemize}
-                \uncover<4->{
-                    \item If there's not $u_i$ in the denominator of $v$, then there's not $u_i$ in the denominator of $v'$. But then $\alpha \notin F$.
-                }
-                \uncover<5->{
-                    \item If there's $u_i$ in the denominator of $v$, then the demominator of $v'$ is divisible by $u_i^2$ and it still cannot be reduced in general sum and $\alpha \notin F$.
-                }
+        \begin{itemize}
+            \uncover<4->{
+                \item If there's not $u_i$ in the denominator of $v$, then there's not $u_i$ in the denominator of $v'$. But then $\alpha \notin F$.
+            }
+            \uncover<5->{
+                \item If there's $u_i$ in the denominator of $v$, then the demominator of $v'$ is divisible by $u_i^2$ and it still cannot be reduced in the general sum and $\alpha \notin F$.
+            }
+        \end{itemize}
 
-            \end{itemize}
+        \uncover<6->{
+            Therefore $u_1, \ldots, u_m \in F$ and $v' \in F$
+        }
+
+        \uncover<7->{
+            Then 
+            \[
+                v' = (ct + s)' = ct' + s' = c \frac{z'}{z} + s'
+            \]
+            \[
+                \alpha = \sum c_i \frac{u_i'}{u_i} + c \frac{z'}{z} + s'
+            \]
+        }
+        
 
     \end{frame}
 
