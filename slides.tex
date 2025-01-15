@@ -139,7 +139,7 @@
     \begin{frame}{The Main Lemma}
         \begin{lemma}<1->
             Let $F$ be a differential field, $t$ is trancendental over $F$, and $t$ is a logarithm or an exponent of some element from $F$. 
-            And let $f\in F[x]$ be a polynom, $\deg{f} = k \ge 1$
+            And let $f\in F[x]$ be a polynomial, $\deg{f} = k \ge 1$
             \begin{itemize}
                 \item If $t$ is a logarithm then the degree of $(f(t))'$ is $k$ if the leading coefficient of is not a constant, and it has degree $k-1$ if  the leading coefficient is a constant.
                 \item If $t$ is an exponent then the degree of $(f(t))'$ is $k$ and it's multiple of $f$ if and only if $f$ is a monomial.
@@ -191,8 +191,16 @@
         \uncover<1->{
             Firstly let us consider the basic properties of logarithmical derivatives:
             \[
-            \frac{(ab)'}{ab} = \frac{a'}{a} + \frac{b'}{b} \quad \frac{(1/a)'}{1/a} = \frac{a'}{a}
+            \frac{(ab)'}{ab} = \frac{a'}{a} + \frac{b'}{b}, \quad \frac{(1/a)'}{1/a} = - \frac{a'}{a}
             \]
+        }
+        
+        \uncover<2->{
+            Then we can suppose that all of $u_i$ are distinct monic irreducible polynomials.
+        }
+
+        \uncover<3->{
+            Now suppose that $u_i \notin F$.
         }
     \end{frame}
 
