@@ -133,28 +133,31 @@
 
     \section{Liouville's Theorem (proof)}
     \begin{frame}{Liouville's Theorem (proof)}
-        <1->
-        Let $x$ be the solution of differential equation mentioned above. And $x\in F(t_1, \ldots, t_n)$.
+        \uncover<1->{
+            Let $x$ be the solution of differential equation mentioned above. And $x\in F(t_1, \ldots, t_n)$.
 
-        We will use induction on $n$ (we don't fix the field $F$).
-        And for short we will denote $t = t_1$.
+            We will use induction on $n$ (we don't fix the field $F$).
+            And for short we will denote $t = t_1$.
+        }
 
-        <2->
-        Using the inductive assumption, we get
-        \[
-                \alpha = \sum\limits_{i=1}^m c_i \frac{u_i'}{u_i} + v'
-        \]
-        for some $c_1, \ldots c_m \in K$, $u_1, \ldots, u_m, v \in F(t)$.
-        
-        Here we use that the subfield of constants of $F(t)$ is $K$.
+        \uncover<2->{
+            Using the inductive assumption, we get
+            \[
+                    \alpha = \sum\limits_{i=1}^m c_i \frac{u_i'}{u_i} + v'
+            \]
+            for some $c_1, \ldots c_m \in K$, $u_1, \ldots, u_m, v \in F(t)$.
+            
+            Here we use that the subfield of constants of $F(t)$ is $K$.
+        }
 
-        <3->
-        Now we consider 3 cases 
-        \begin{itemize}
-            \item $t$ is trancendental over $F$ and it is a logarithm;
-            \item $t$ is trancendental over $F$ and it is an exponent;
-            \item $t$ is algebraic over $F$.
-        \end{itemize}
+        \uncover{<3->
+            Now we consider 3 cases 
+            \begin{itemize}
+                \item $t$ is trancendental over $F$ and it is a logarithm;
+                \item $t$ is trancendental over $F$ and it is an exponent;
+                \item $t$ is algebraic over $F$.
+            \end{itemize}
+        }
     \end{frame}
 
     \subsection{$t$ is a trancendental logarithm}
