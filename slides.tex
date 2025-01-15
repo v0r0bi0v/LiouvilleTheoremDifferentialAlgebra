@@ -302,14 +302,14 @@
             \uncover<3->{
                 Using Liouville's theorem
                 \[
-                    ft = \sum \frac{u_i'}{u_i} + v'
+                    ft = \sum c_i\frac{u_i'}{u_i} + v'
                 \]
             }
             
             \uncover<4->{
                 One can use the main lemma and get:
                 \[
-                    \frac{u_i'}{u_i} \in F, \quad v = \sum\limits_{i\in I\subseq \Z} b_i t^i
+                    c_i \frac{u_i'}{u_i} \in F, \quad v = \sum\limits_{i\in I\subseq \Z} b_i t^i
                 \]
                 
                 The rest of the proof is trivial.
@@ -340,7 +340,25 @@
         \end{block}
 
         \begin{proof}<4->
-            TODO
+
+            \uncover<4->{
+                This case is slightly more complicated.
+                
+                Denoting $F = \C(x)$, $t = exp(x)$ and using Liouville's theorem
+                \[
+                    \frac{t^2 - 1}{tz} = \sum c_i\frac{u_i'}{u_i} + v'
+                \]
+            }
+
+            \uncover<5->{
+                After some considirations using the main lemma we will deduce
+                \[
+                    \frac{1}{x} = a' + a
+                \]
+                where $a\in F$.
+                
+                But it's quite clear that it's impossible.
+            }
         \end{proof}
     \end{frame}
 
