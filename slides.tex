@@ -289,10 +289,13 @@
     \section{Corollaries}
     \subsection{The main corollary}
     \begin{frame}{The main corollary}
-        \begin{block}{Corollary}
-            Let $f, g \in \C(x), f\neq 0$. 
-            If the integral of $f(x) \cdot exp(g(x))$ can be expressed in elementary terms, then there's $r\in \C(x)$ such that $f = r' + rg'$
+        \begin{block}{Corollary}<1->
+            Let $f, g \in \C(x), f\neq 0$ and $g$ is not constant. 
+            If the integral of $f(x) exp(g(x))$ can be expressed in elementary terms, then there's $r\in \C(x)$ such that $f = r' + rg'$.
         \end{block}
+        \begin{proof}<2->
+            One can use Liouville's theorem for the field $\C(x, exp(g))$
+        \end{proof}
     \end{frame}
     
     \subsection{Some special cases}
