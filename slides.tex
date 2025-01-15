@@ -33,6 +33,7 @@
 \renewcommand{\C}{\ensuremath{\mathbb{C}}}
 \newcommand{\R}{\ensuremath{\mathbb{R}}}
 \newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
 \renewcommand{\|}{\ensuremath{\hspace{0.1cm} | \hspace{0.1cm}}}
 
 \newcommand{\red}[1]{\textcolor{red}{#1}}
@@ -295,6 +296,18 @@
         \end{block}
         \begin{proof}<2->
             One can use Liouville's theorem for the field $\C(x, exp(g))$.
+
+            Denoting $F = \C(x)$, $t = exp(g)$.
+            
+            Using Liouville's theorem
+            \[
+                ft = \sum \frac{u_i'}{u_i} + v'
+            \]
+
+            One can use the main lemma and get:
+            \[
+                \frac{u_i'}{u_i} \in F, \quad v = \sum\limits_{i\in I\subseq \Z} b_i t^i
+            \]
             
             TODO
         \end{proof}
