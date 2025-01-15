@@ -295,21 +295,25 @@
             If the integral of $f(x) exp(g(x))$ can be expressed in elementary terms, then there's $r\in \C(x)$ such that $f = r' + rg'$.
         \end{block}
         \begin{proof}<2->
-            One can use Liouville's theorem for the field $\C(x, exp(g))$.
-
-            Denoting $F = \C(x)$, $t = exp(g)$.
+            \uncover<3->{
+                Denoting $F = \C(x)$, $t = exp(g)$.
+            }
             
-            Using Liouville's theorem
-            \[
-                ft = \sum \frac{u_i'}{u_i} + v'
-            \]
-
-            One can use the main lemma and get:
-            \[
-                \frac{u_i'}{u_i} \in F, \quad v = \sum\limits_{i\in I\subseq \Z} b_i t^i
-            \]
+            \uncover<4->{
+                Using Liouville's theorem
+                \[
+                    ft = \sum \frac{u_i'}{u_i} + v'
+                \]
+            }
             
-            The rest of the proof is trivial.
+            \uncover<5->{
+                One can use the main lemma and get:
+                \[
+                    \frac{u_i'}{u_i} \in F, \quad v = \sum\limits_{i\in I\subseq \Z} b_i t^i
+                \]
+                
+                The rest of the proof is trivial.
+            }
         \end{proof}
     \end{frame}
     
