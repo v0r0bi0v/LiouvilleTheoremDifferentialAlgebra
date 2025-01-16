@@ -75,11 +75,11 @@
             \begin{itemize}
                 \item Introduce and prove a powerful tool: \textbf{Liouville's theorem}.
                 \item Derive these integrals as a consequence.
-                \item If time permits, discuss some special from of \textbf{elliptic integrals}, which also cannot be expressed in elementary terms.
+                \item If time permits, discuss a special \textbf{class} of \textbf{elliptic integrals}, which also cannot be expressed in elementary terms:
                 \[
                 \int \frac{dx}{\sqrt{P(x)}}
                 \]
-                for $\deg P = 2, 3$ and $P$ hasn't multiple roots.
+                where $\deg P = 2, 3$ and $P$ hasn't multiple roots.
             \end{itemize}
         }
     \end{frame}
@@ -87,7 +87,7 @@
     \section{Basic definitions}
     \begin{frame}{Basic definitions}
         \begin{block}{Remark}<1->
-            Through the all of presentation we will suppose that all fields have 0 characteristic.
+            Throughout the presentation, we will assume that all fields have characteristic 0.
         \end{block}
         \begin{definition}<2->
             Field $F$ is differential if it's equipped with the unary function $'$ such that:
@@ -97,13 +97,13 @@
             \end{itemize}
         \end{definition}
         \begin{definition}<3->
-            Subfield $K \subseteq F$, $K = \{ a \in F \| a' = 0 \}$ is called subfield of constants.
+            The subfield $K \subseteq F$, defined as $K = { a \in F \mid a’ = 0 }$, is called the subfield of constants.
         \end{definition}
         \begin{definition}<4->
-            Differential extension of the differential field $F$ is field $E$ such that $E \supseteq F$ and there is the same differentiation $'$ on $E$.
+            A differential extension of a differential field $F$ is a field $E$ such that $E \supseteq F$ and the differentiation $’$ extends to $E$ in the same way”.
         \end{definition}
         \begin{definition}<5->
-            Let $F$ be the differential field. Then
+            Let $F$ be a differential field. Then
             \begin{itemize}
                 \item $b$ is called the logarithm of $a$ if $b' = \frac{a'}{a}$
                 \item $b$ is called the exponent of $a$ if $a' = \frac{b'}{b}$
@@ -113,104 +113,104 @@
     
     
 
-    \section{What is expression in elementary terms}
-    \begin{frame}{What is expression in elementary terms}
+    \section{What is an expression in elementary terms?}
+    \begin{frame}{What is an expression in elementary terms?}
         \begin{definition}<1->
-            The extension $E$ of $F$ is called elementary if it can be presented as $E = F(t_1, \ldots, t_n)$ and for all $i$ $t_i$ is logarithm or exponent or algebraic over $F(t_1, \ldots, t_{i-1})$.
+            An extension $E$ of $F$ is called \textbf{elementary} if it can be written as $E = F(t_1, \ldots, t_n)$, where for each $i$, the element $t_i$ is either a logarithm, an exponent, or algebraic over $F(t_1, \ldots, t_{i-1})$.
         \end{definition}
         \begin{block}{Remark}<2->
-            Common sense says us that some function $f: \C \to \C$ is elementary iff it can be constucted via finite number of radicals, sines, cosines, exponents, logarithms and hyperbolic functions.
-            One can see that it's consistent with our approach. Futhermore our definition on elementarity is more general.
+            Common sense tells us that a function $f: \C \to \C$ is elementary if and only if it can be constructed using a finite number of radicals, sines, cosines, exponents, logarithms, and hyperbolic functions.
+            One can see that this is consistent with our approach. Furthermore, our definition of elementarity is more general.
         \end{block}
     \end{frame}
 
     \begin{section}{Liouville's Theorem (statement)}
     \begin{frame}{Liouville's Theorem (statement)}
-        \begin{theorem}[Liouville, 1833-1841]
-            Let $F$ be a differential field, and $K$ is its subfield of constants. 
-            If for $\alpha\in F$ equation $x' = \alpha$ has the solution in some elementary extension of $F$, such that its subfield of constants is still $K$, then
+        \begin{theorem}[Liouville, 1833–1841]
+            Let $F$ be a differential field, and let $K$ be its subfield of constants.  
+            If for some $\alpha \in F$, the equation $x' = \alpha$ has a solution in some elementary extension of $F$ such that its subfield of constants remains $K$, then  
             \[
                 \alpha = \sum\limits_{i=1}^m c_i \frac{u_i'}{u_i} + v'
             \]
-            for some $c_1, \ldots c_m \in K$, $u_1, \ldots, u_m, v \in F$.
+            for some $c_1, \ldots, c_m \in K$ and $u_1, \ldots, u_m, v \in F$.
         \end{theorem}
     \end{frame}
 
     \section{The Main Lemma}
     \begin{frame}{The Main Lemma}
         \begin{lemma}<1->
-            Let $F$ be a differential field, $t$ is trancendental over $F$, and $t$ is a logarithm or an exponent of some element from $F$. 
-            And let $f\in F[x]$ be a polynomial, $\deg{f} = k \ge 1$
+            Let $F$ be a differential field, and let $t$ be transcendental over $F$. Suppose that $t$ is either a logarithm or an exponent of some element from $F$.  
+            Let $f \in F[x]$ be a polynomial with $\deg f = k \geq 1$. Then:
             \begin{itemize}
-                \item If $t$ is a logarithm then the degree of $(f(t))'$ is $k$ if the leading coefficient of is not a constant, and it has degree $k-1$ if  the leading coefficient is a constant.
-                \item If $t$ is an exponent then the degree of $(f(t))'$ is $k$ and it's multiple of $f$ if and only if $f$ is a monomial.
+                \item If $t$ is a logarithm, then the degree of $(f(t))'$ is $k$ if the leading coefficient of $f$ is not a constant, and $k - 1$ if the leading coefficient is a constant.
+                \item If $t$ is an exponent, then the degree of $(f(t))'$ is $k$, and it is a multiple of $f$ if and only if $f$ is a monomial.
             \end{itemize}
         \end{lemma}
 
         \begin{proof}<2->
-            It's a quite simple technical exercise.
+            This is a straightforward technical exercise.
         \end{proof}
     \end{frame}
 
     \section{Liouville's Theorem (proof)}
     \begin{frame}{Liouville's Theorem (proof)}
         \uncover<1->{
-            Let $x$ be the solution of differential equation mentioned above. And $x\in F(t_1, \ldots, t_n)$.
+            Let $x$ be a solution of the differential equation mentioned above, and suppose that $x \in F(t_1, \ldots, t_n)$.
 
-            We will use induction on $n$ (we don't fix the field $F$).
+            We will use induction on $n$ (without fixing the field $F$).
 
-            For short we denote $t = t_1$.
+            For brevity, we denote $t = t_1$.
         }
 
         \uncover<2->{
-            Using the inductive assumption, we get
+            Using the inductive assumption, we obtain
             \[
                 \alpha = \sum\limits_{i=1}^m c_i \frac{u_i'}{u_i} + v'
             \]
-            for some $c_1, \ldots c_m \in K$, $u_1, \ldots, u_m, v \in F(t)$.
+            for some $c_1, \ldots, c_m \in K$ and $u_1, \ldots, u_m, v \in F(t)$.
             
-            Here we use that the subfield of constants of $F(t)$ is $K$.
+            Here we use the fact that the subfield of constants of $F(t)$ is $K$.
         }
 
         \uncover<3->{
-            Now we consider 3 cases 
+            Now we consider three cases:
             \begin{itemize}
-                \item $t$ is trancendental over $F$ and it is a logarithm;
-                \item $t$ is trancendental over $F$ and it is an exponent;
+                \item $t$ is transcendental over $F$ and is a logarithm;
+                \item $t$ is transcendental over $F$ and is an exponent;
                 \item $t$ is algebraic over $F$.
             \end{itemize}
         }
     \end{frame}
 
     \subsection{$t$ is a trancendental logarithm}
-    \begin{frame}{$t$ is a trancendental logarithm}
+    \begin{frame}{$t$ is a transcendental logarithm}
         \uncover<1->{
-            Firstly let us consider the basic properties of logarithmical derivatives:
+            First, let us consider the basic properties of logarithmic derivatives:
             \[
             \frac{(ab)'}{ab} = \frac{a'}{a} + \frac{b'}{b}, \quad \frac{(1/a)'}{1/a} = - \frac{a'}{a}
             \]
         }
         
         \uncover<2->{
-            Then we can suppose that all of $u_i$ are distinct monic irreducible polynomials.
+            Then we can assume that all $u_i$ are distinct monic irreducible polynomials.
         }
 
         \uncover<3->{
-            Now suppose that some $u_i \notin F$. It's clear that $\frac{u_i'}{u_i}$ is already in lowest terms (because $\deg u_i > \deg u_i'$).
+            Now suppose that some $u_i \notin F$. It is clear that $\frac{u_i'}{u_i}$ is already in lowest terms (since $\deg u_i > \deg u_i'$).
         }
 
         
         \begin{itemize}
             \uncover<4->{
-                \item If there's not $u_i$ in the denominator of $v$, then there's not $u_i$ in the denominator of $v'$. But then $\alpha \notin F$.
+                \item If there is no $u_i$ in the denominator of $v$, then there is no $u_i$ in the denominator of $v'$. But then $\alpha \notin F$.
             }
             \uncover<5->{
-                \item If there's $u_i$ in the denominator of $v$, then the demominator of $v'$ is divisible by $u_i^2$ and it still cannot be reduced in the general sum and $\alpha \notin F$.
+                \item If there is $u_i$ in the denominator of $v$, then the denominator of $v'$ is divisible by $u_i^2$ and still cannot be reduced in the general sum, implying that $\alpha \notin F$.
             }
         \end{itemize}
 
         \uncover<6->{
-            Therefore $u_1, \ldots, u_m \in F$ and $v' \in F$
+            Therefore, $u_1, \ldots, u_m \in F$ and $v' \in F$.
         }
 
         \uncover<7->{
@@ -223,22 +223,20 @@
             \]
         QED.
         }
-        
-
     \end{frame}
 
     \subsection{$t$ is a trancendental exponent}
-    \begin{frame}{$t$ is a trancendental exponent}
+    \begin{frame}{$t$ is a transcendental exponent}
         \uncover<1->{
-            Let $u_1, \ldots, u_m$ be distinct monic irreducible again.
+            Let $u_1, \ldots, u_m$ be distinct monic irreducible polynomials again.
         }
 
         \uncover<2->{
-            It's clear that $u_i = t$ is only $u$ that can be not in $F$ because $t$ is an only irreducible monomial, and we would get the same contradiction otherwise.
+            It is clear that $u_i = t$ is the only $u$ that may not be in $F$, because $t$ is the only irreducible monomial, and we would get the same contradiction otherwise.
         }
 
         \uncover<3->{
-            By the main lemma $v'\in F$ iff $v\in F$.
+            By the main lemma, $v'\in F$ if and only if $v\in F$.
         }
 
         \uncover<4->{
@@ -247,25 +245,23 @@
                 \alpha = c_1 \frac{t'}{t} + \sum\limits_{i=2}^m \frac{u_i'}{u_i} + v' = \sum\limits_{i=2}^m \frac{u_i'}{u_i} + (v + c_1 z)'
             \]
         }
-
     \end{frame}
 
     \subsection{$t$ is algebraic}
     \begin{frame}{$t$ is algebraic}
         \uncover<1->{
-            Consider all congurent elements of $t$:
+            Consider all conjugate elements of $t$:
             \[
                 \tau_1=t, \tau_2, \ldots, \tau_k
             \]
         }
 
         \uncover<2->{
-            Then it's clear that for all $j$:
+            Then it is clear that for all $j$:
             \[
                 \alpha = \sum\limits_i \frac{u_i'(\tau_j)}{u_i(\tau_j)} + v'(\tau_j)
             \]
         }
-
 
         \uncover<3->{
             \[
@@ -275,14 +271,14 @@
 
         \uncover<4->{
             \[
-                \alpha = \frac{1}{k} \left( \sum\limits_i \frac{\left(\prod\limits_j u_i(\tau_j)\right)'}{\prod\limits_j u_i(\tau_j)} + (\sum\limits_j v(\tau_j))' \right)
+                \alpha = \frac{1}{k} \left( \sum\limits_i \frac{\left(\prod\limits_j u_i(\tau_j)\right)'}{\prod\limits_j u_i(\tau_j)} + \left(\sum\limits_j v(\tau_j)\right)' \right)
             \]
-            Since all rational functions of polynomial's roots are belongs to the basic field, proof is completed.
+            Since all rational symmetric functions of a polynomial's roots belong to the base field, the proof is complete.
         }
 
         \uncover<5->{
             \begin{block}{Remark}
-                Here we used that algebraic extension can be equipped with the unique differentiation, but it's trivial for the case of meromorphic functions.
+                Here we used the fact that an algebraic extension can be equipped with a unique differentiation, but this is trivial in the case of meromorphic functions.
             \end{block}
         }
     \end{frame}
@@ -291,25 +287,25 @@
     \subsection{The main corollary}
     \begin{frame}{The main corollary}
         \begin{block}{Corollary}<1->
-            Let $f, g \in \C(x), f\neq 0$ and $g$ is not constant. 
-            If the integral of $f(x) exp(g(x))$ can be expressed in elementary terms, then there's $r\in \C(x)$ such that $f = r' + rg'$.
+            Let $f, g \in \C(x), f \neq 0$ and $g$ is not constant. 
+            If the integral of $f(x) \exp(g(x))$ can be expressed in elementary terms, then there exists $r \in \C(x)$ such that $f = r' + rg'$.
         \end{block}
         \begin{proof}<2->
             \uncover<2->{
-                Denoting $F = \C(x)$, $t = exp(g)$.
+                Denote $F = \C(x)$ and $t = \exp(g)$.
             }
             
             \uncover<3->{
-                Using Liouville's theorem
+                Using Liouville's theorem, we get
                 \[
-                    ft = \sum c_i\frac{u_i'}{u_i} + v'
+                    ft = \sum c_i \frac{u_i'}{u_i} + v'
                 \]
             }
             
             \uncover<4->{
-                One can use the main lemma and get:
+                One can use the main lemma and obtain:
                 \[
-                    c_i \frac{u_i'}{u_i} \in F, \quad v = \sum\limits_{i\in I\subseq \Z} b_i t^i
+                    c_i \frac{u_i'}{u_i} \in F, \quad v = \sum\limits_{i \in I \subseteq \Z} b_i t^i
                 \]
                 
                 The rest of the proof is trivial.
@@ -318,25 +314,23 @@
     \end{frame}
     
     \subsection{Some special cases}
-    \begin{frame}
+    \begin{frame}{Some special cases}
         \begin{block}{Corollary}<1->
-            Functions
+            The following integrals are not elementary:
             \[
                 \int e^{\pm x^2} \, dx, \quad \int \frac{dx}{\ln x}, \quad \int \frac{e^x}{x} \, dx, \quad \int \log \log x \, dx
             \]
-            are not elementary.
         \end{block}
         
         \begin{proof}<2->
-            All of these cases can be simply proven with the main corollary and some basic asymptotical investigations.
+            All of these cases can be simply proven using the main corollary and some basic asymptotic analysis.
         \end{proof}
 
         \begin{block}{Corollary}<3->
-            Functions
+            The following integrals are not elementary:
             \[
                 \int \frac{\sin x}{x} \, dx, \quad \int \frac{\sinh x}{x} \, dx
             \]
-            are not elementary.
         \end{block}
 
         \begin{proof}<4->
@@ -344,18 +338,18 @@
             \uncover<4->{
                 This case is slightly more complicated.
                 
-                Denoting $F = \C(x)$, $t = exp(x)$ and using Liouville's theorem
+                Denote $F = \C(x)$, $t = \exp(x)$, and using Liouville's theorem, we get
                 \[
-                    \frac{t^2 - 1}{tz} = \sum c_i\frac{u_i'}{u_i} + v'
+                    \frac{t^2 - 1}{tz} = \sum c_i \frac{u_i'}{u_i} + v'
                 \]
             }
 
             \uncover<5->{
-                After some considirations using the main lemma we will deduce an impossible equation
+                After some considerations, using the main lemma, we deduce an impossible equation:
                 \[
                     \frac{1}{x} = a' + a
                 \]
-                where $a\in F$.
+                where $a \in F$.
             }
         \end{proof}
     \end{frame}
@@ -363,32 +357,35 @@
     \subsection{On elliptic integrals}
     \begin{frame}{On elliptic integrals}
         \begin{block}{Corollary}<1->
-            Let $P$ be a monic polynomial with degree $\ge 3$ and no repeated roots. Then $\int \frac{dx}{\sqrt{P(x)}}$ is not elementary.
+            Let $P$ be a monic polynomial of degree $\ge 3$ with no repeated roots. Then
+            \[
+                \int \frac{dx}{\sqrt{P(x)}} 
+            \]
+            is not elementary.
         \end{block}
 
         \begin{proof}<2->
-            Here we will use a bit more advanced stuff on Riemann surfaces.
+            Here, we will use some more advanced concepts from the theory of Riemann surfaces.
 
-            Liouville's theorem enable us to write
+            Liouville's theorem allows us to write
             \[
                 \frac{1}{\sqrt{P(x)}} = \sum c_i \frac{u_i'}{u_i} + v'
             \]
-            with $c_1,\ldots,c_m\in \C$ and $u_1, \ldots, u_m, v \in \C(x, \sqrt{P(x)})$.
+            with $c_1, \ldots, c_m \in \C$ and $u_1, \ldots, u_m, v \in \C(x, \sqrt{P(x)})$.
             
             \uncover<3->{
-                Now we deduce an equation on the compact Riemann surface $C$ associated to the equation $y^2 = P(x)$
+                Now, we deduce an equation on the compact Riemann surface $C$ associated with the equation $y^2 = P(x)$:
                 \[
-                    \frac{dx}{y} = \sum c_i \frac{d u_i}{u_i} + dv
+                    \frac{dx}{y} = \sum c_i \frac{du_i}{u_i} + dv
                 \]
             }
 
             \uncover<4->{
-                The left hand side is a nonzero holomorphic $1$-form on C.
+                The left-hand side is a nonzero holomorphic $1$-form on $C$.
 
-                But such type of the forms cannot be expressed as a linear combination of a logarithmic meromorphic differentials $du/u$ and exact meromorphic differentials $dv$.
+                However, such forms cannot be expressed as a linear combination of logarithmic meromorphic differentials $\frac{du}{u}$ and exact meromorphic differentials $dv$.
             }
         \end{proof}
-
     \end{frame}
 
     \section{Bibliography}
