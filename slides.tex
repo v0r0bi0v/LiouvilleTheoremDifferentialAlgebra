@@ -282,7 +282,7 @@
 
         \uncover<5->{
             \begin{block}{Remark}
-                Here we used that algebraic extension can be equipped wit the unique differentiation, but it's trivial for the case of meromorphic functions.
+                Here we used that algebraic extension can be equipped with the unique differentiation, but it's trivial for the case of meromorphic functions.
             \end{block}
         }
     \end{frame}
@@ -362,7 +362,33 @@
 
     \subsection{On elliptic integrals}
     \begin{frame}{On elliptic integrals}
-        TODO
+        \begin{block}{Corollary}<1->
+            Let $P$ be a monic polynomial with degree $\ge 3$ and no repeated roots. Then $\int \frac{dx}{\sqrt{P(x)}}$ is not elementary.
+        \end{block}
+
+        \begin{proof}<2->
+            Here we will use a bit more advanced stuff on Riemann surfaces.
+
+            Liouville's theorem enable us to write
+            \[
+                \frac{1}{\sqrt{P(x)}} = \sum c_i \frac{u_i'}{u_i} + v'
+            \]
+            with $c_1,\ldots,c_m\in \C$ and $u_1, \ldots, u_m, v \in \C(x, \sqrt(P(x)))$.
+            
+            \uncover<3->{
+                Now we deduce an equation on the compact Riemann surface $C$ associated to the equation $y^2 = P(x)$
+                \[
+                    \frac{dx}{y} = \sum c_i \frac{d u_i}{u_i} + dv
+                \]
+            }
+
+            \uncover<4->{
+                The left hand side is nonzero holomorphic $1$-form on C.
+
+                But such type of the forms cannot be expressed as a linear combination of a logarithmic meromorphic differentials $du/u$ and exact meromorphic differential $dv$.
+            }
+        \end{proof}
+
     \end{frame}
 
 
